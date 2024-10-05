@@ -25,6 +25,9 @@ const exercici2 = () => {
     div.style.fontFamily = "Helvetica"
     div.style.fontSize = "30px"
     console.log("hola")
+    //opcional :)
+    const text2 = document.getElementById("text2")
+    text2.textContent = "Text amb l'estil aplicat"
 }
 
 //exercici 3
