@@ -4,16 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Manipulació del DOM</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+  <style>
+    .taskGroup {
+        display: flex;
+        gap: 1rem;
+
+        & button {
+            padding: .5rem;
+            line-height: 1;
+          
+        }
+    }
+</style>
 </head>
 <body>
-  <h1>Títol original</h1>
-  <p>Text original del paràgraf.</p>
-  <ul>
-    <li>Element 1</li>
-    <li>Element 2</li>
-    <li>Element 3</li>
-  </ul>
-  <button id="canviText">Canvia Text</button>
+  <section id="ex1">
+    <h1 id="title1">Títol original</h1>
+    <p id="text">Text original del paràgraf.</p>
+    <ul id="list1">
+      <li>Element 1</li>
+      <li>Element 2</li>
+      <li>Element 3</li>
+    </ul>
+    <button id="btn1">Canvia Text</button>
+  </section>
+
+  <div id="ex2" class="ex2">
+    <p>Fes clic per canviar l'estil</p>
+  </div>
+
+  <form id="form1">
+    <input type="text" placeholder="Introdueix aquí el text..." id="value">
+    <button type="submit" id="submit">Envia</button>
+  </form>
+
+  <div class="taskInput">
+    <form id="form2">
+        <label for="task">Products list</label>
+        <input class="box" type="text" name="task" id="task" placeholder="Introdueix la tasca...">
+        <input class="btn" value="Add" type="submit">
+    </form>
+  </div>
+
+    <h4>Products: </h4>
+    <ul id="list">
+    </ul>
   
-  <script src="dom.js"></script>
+  
+  <script src="./script.js"></script>
 </body>
